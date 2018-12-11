@@ -1,5 +1,5 @@
 class Recipe < ApplicationRecord 
-	validates_presence_of :name, :instructions, :ingredients, :picture 
+	validates_presence_of :name, :url, :picture 
 	
 	def voted 
 		self.votes += 1
